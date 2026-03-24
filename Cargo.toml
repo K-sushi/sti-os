@@ -1,0 +1,42 @@
+[package]
+name = "sti-os"
+version = "0.1.0"
+edition = "2021"
+description = "State-Transition Intelligence OS — prove what became possible, not predict what will happen"
+license = "Apache-2.0"
+repository = "https://github.com/FibonacciFlux/sti-os"
+keywords = ["ethereum", "security", "intelligence", "revm", "onchain"]
+categories = ["cryptography::cryptocurrencies"]
+
+[dependencies]
+# Async runtime
+tokio = { version = "1.49", features = ["full"] }
+async-trait = "0.1"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Error handling
+anyhow = "1.0"
+thiserror = "2.0"
+
+# Logging
+tracing = "0.1"
+
+# Time & ID
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1.6", features = ["v4", "serde"] }
+
+# EVM primitives
+alloy-primitives = { version = "0.8", features = ["serde"] }
+
+# HTTP (for RPC calls)
+reqwest = { version = "0.12", features = ["json", "rustls-tls"] }
+hex = "0.4"
+
+# Graph
+petgraph = "0.6"
+
+[dev-dependencies]
+tokio-test = "0.4"
