@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 description = "State-Transition Intelligence OS — prove what became possible, not predict what will happen"
 license = "Apache-2.0"
-repository = "https://github.com/FibonacciFlux/sti-os"
+repository = "https://github.com/K-sushi/sti-os"
 keywords = ["ethereum", "security", "intelligence", "revm", "onchain"]
 categories = ["cryptography::cryptocurrencies"]
 
